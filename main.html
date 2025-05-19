@@ -1,16 +1,45 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+        .container {
+            width: 80%; /* Adjust as needed */
+            margin: auto;
+            padding: 20px;
+            border: 2px solid black;
+            border-radius: 15px;
+            text-align: center;
+        }
+
+        .red, .green, .yellow {
+            width: 100px; /* Adjust as needed */
+            height: 100px; /* Same as width for a circle */
+            display: inline-block;
+            margin: 10px;
+            border-radius: 50%; /* Makes it a circle */
+        }
+
+        .red {
+            background-color: red;
+        }
+
+        .green {
+            background-color: green;
+        }
+
+        .yellow {
+            background-color: yellow;
+        }
+    </style>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
-
+    <div class="container">
+        <div class="red"></div>
+        <div class="green"></div>
+        <div class="yellow"></div>
+    </div>
 </body>
-
 </html>
